@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Gallery</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Styles/style.css">
+    </head>
+    <body>
+        <header>
+            <ul id="navbar">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="sports.html">Sports</a></li>
+            </ul>
+        </header>
+        <h1>Gallery</h1>
+        <p class="pagedescription">Here are some of my favorite pictures.</p>
+        <br>
+        <div id="photocontainer">
+            <div class="slide fade" style="display: block">
+                <img src="Images/Oslo.jpg" alt="">
+                <figcaption class="caption">Oslo 2020</figcaption>
+            </div>
+            <div class="slide fade">
+                <img src="Images/NUTS.jpg" alt="">
+                <figcaption class="caption">NUTS Ylläs Pallas 2019</figcaption>
+            </div>
+            <div class="slide fade">
+                <img src="Images/Everest.JPG" alt="">
+                <figcaption class="caption">Everest 2014</figcaption>
+            </div>
+            <div  class="slide fade">
+                <img src="Images/Guilin.JPG" alt="">
+                <figcaption class="caption">Guilin 2015</figcaption>
+            </div>
+            <div  class="slide fade">
+                <img src="Images/Lake.jpg" alt="">
+                <figcaption class="caption">Lake Louise 2019</figcaption>
+            </div>
+            <div class="slide fade">
+                <img src="Images/WOCMarathon.jpg" alt="">
+                <figcaption class="caption">Great Wall Marathon 2016</figcaption>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div style="text-align:center">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("slide");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,474 @@
+/* General Rules */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100vw;
+}
+
+header {
+    width:100%;
+    display: flex;
+    background: linear-gradient(138deg, rgba(2,0,36,1) 0%, rgba(32,167,154,1) 0%, rgba(0,212,255,0.8704103671706264) 47%);
+}
+
+#navbar {
+    display: flex;
+    text-align: center;
+    margin: auto;
+    list-style: none;
+}
+
+#navbar li {
+    width: 5em;
+    margin: .5em 1em;
+}
+h1 {
+    text-align: left;
+    margin: 1em;
+    font-size: 2.5em;
+}
+
+.pagedescription {
+    width: 80%;
+    margin: auto;
+    margin-top: 4em;
+    font-size: 1.1em;
+    margin-left: 8rem;
+}
+
+/* Home Page */
+
+#homepage {
+    display: flex;
+}
+
+.navigation {
+    position: relative;
+    padding: 1em;
+    height: 100vh;
+    width: 30%;
+    background: linear-gradient(138deg, rgba(2,0,36,1) 0%, rgba(32,167,154,1) 0%, rgba(0,212,255,0.8704103671706264) 47%);
+}
+
+#nametitle {
+    margin: .2em auto;
+    text-align: center;
+    font-size: 2em;
+}
+
+#david {
+    display: block;
+    margin: auto;
+    height: 12em;
+    width: 12em;
+    border: 4px solid navy;
+    border-radius: 50%;
+}
+
+#nav {
+    width: 100%;
+    text-align: center;
+    margin-top: 1.5em;
+    list-style: none;
+}
+
+li a {
+    background-color: navy;
+    color: white;
+    margin-top: 0.5em;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+li a:hover {
+    color: navy;
+    background-color: white;
+    transition: .3s ease-out;
+}
+
+#description {
+    margin: 2em;
+    float: right;
+}
+
+#dateandtime {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: .3em;
+    gap: 1em;
+    margin: auto;
+    font-size: 1em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 100%;
+}
+
+
+/* Skills Page */
+
+#addskill {
+    display: flex;
+    gap: 1em;
+    margin: 2em auto;
+    width: 40%;
+}
+
+#addskill label {
+    display: block;
+}
+
+#cv {
+    width: 70%;
+    display: flex;
+    text-align: center;
+    margin: auto;
+}
+
+#cvlinks {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    height: 100%;
+    padding: none;
+    margin-left: 1em;
+}
+
+#cvlinks a {
+    background: navy;
+    color: white;
+    border-radius: 5px;
+    width: 3em;
+    text-decoration: none;
+    text-align: center;
+}
+
+#skillcontainer {
+    width: 70%;
+    margin: 5em auto;
+}
+
+.skillcard {
+    display: flex;
+    margin: 2rem;
+    background: linear-gradient(138deg, rgba(2,0,36,1) 0%, rgba(32,167,154,1) 0%, rgba(0,212,255,0.8704103671706264) 47%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+}
+
+.skillpicture {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 5px 0 0 5px;
+}
+
+.skillinfo {
+    width: 60%;
+    margin: .5rem;
+    padding: .5rem;
+}
+
+.skilltitle {
+    font-size: 1.8em;
+    margin-bottom: 1.5em;
+}
+
+.skilldescription {
+    font-size: 1.1em;
+}
+
+
+/* Projects Page */
+
+#projectcontainer {
+    display: flex;
+    gap: 5%;
+    margin: 5em auto;
+    width: 80%;
+}
+
+.projectcard {
+    position: relative;
+    background: linear-gradient(138deg, rgba(2,0,36,1) 0%, rgba(32,167,154,1) 0%, rgba(0,212,255,0.8704103671706264) 47%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height:35em;
+    width: 30%;
+    border-radius: 5px;
+}
+
+.projectpicture {
+    width: 100%;
+    height: 50%;
+    border-radius: 5px 5px 0 0;
+}
+
+.projectinfo {
+    padding: .5em;
+}
+
+.projectlink {
+    position: absolute;
+    color: white;
+    background-color: navy;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: .5em;;
+    right: 1em;
+    bottom: 1em;
+}
+
+.mouseover {
+    box-shadow: navy 5px 5px 8px 2px;
+    transition: .6s;
+}
+
+
+/* Gallery Page */
+
+/* Slideshow container */
+#photocontainer {
+    width: 60%;
+    position: relative;
+    margin: auto;
+}
+
+.slide img {
+    width: 100%;
+    height: 90%;
+    border: 8px solid navy;
+    border-radius: 15px;
+}
+
+/* Hide the images by default */
+.slide {
+    display: none;
+    width: 100%;
+    height: 800px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.caption {
+    color: #070707;
+    font-size: 15px;
+    padding: 8px 12px;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+  /* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+  /* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+
+/* Contacts Page */
+
+#contactcontainer {
+    margin: 3em auto;
+    background: linear-gradient(138deg, rgba(2,0,36,1) 0%, rgba(32,167,154,1) 0%, rgba(0,212,255,0.8704103671706264) 47%);
+    width: 80%;
+    padding: 2em;
+    border-radius: 5px;
+}
+
+#contactsections {
+    display: flex;
+    gap: 3em;
+    width: 70%;
+    margin: 2em auto;
+}
+
+#maincontacts {
+    font-size: .9em;
+}
+
+#socialnetworks {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+}
+
+.sociallink {
+    padding: .3em;
+}
+
+/* Contact form */
+
+#contactform {
+    width:80%;
+    margin: auto;
+}
+
+.form-group {
+    margin: .5em auto;
+}
+
+.form-group p {
+    font-weight: 500;
+}
+
+label {
+    display: flex;
+    font-weight: 500;
+}
+
+.form-field {
+    width: 100%;
+    padding: .3em;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+.form-field:focus {
+    outline: none;
+    border: 3px solid navy;
+}
+
+#form-buttons button {
+    background-color: navy;
+    color: white;
+    padding: .6em;
+    margin-right: 1em;
+    border-radius: 5px;
+    border: none;
+}
+
+#form-buttons button:hover {
+    cursor: pointer;
+}
+
+#formresult {
+    margin: 2em auto;
+    text-align: center;
+    font-weight: 500;
+    width: 80%;
+}
+
+/* Races Page */
+
+#racecontainer {
+    margin: auto;
+    width: 50%;
+}
+
+.racecard {
+    background: linear-gradient(138deg, rgba(2,0,36,1) 0%, rgba(32,167,154,1) 0%, rgba(0,212,255,0.8704103671706264) 47%);
+    display: flex;
+    width: 100%;
+    height: 10em;
+    margin: 5em auto;
+    border-radius: 5px;
+}
+
+.racepicture {
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+    margin: -5% 2% auto 2%;
+    border: 5px solid navy;
+}
+
+.racetitle {
+    padding: .2em;
+}
+
+.racedescription {
+    padding: .5em;
+}
+
+/* Fade in cards */
+
+#nutscard {
+    animation: fadeContent 3s ease-in-out forwards;
+    animation-delay: .5s;
+    opacity: 0;
+}
+
+#gwmcard {
+    animation: fadeContent 3s ease-in-out forwards;
+    animation-delay: 1.5s;
+    opacity: 0;
+}
+
+#tengricard {
+    animation: fadeContent 3s ease-in-out forwards;
+    animation-delay: 2.5s;
+    opacity: 0;
+}
+
+@keyframes fadeContent {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}

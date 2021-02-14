@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Contact</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Styles/style.css">
+    </head>
+    <body>
+        <header>
+            <ul id="navbar">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="sports.html">Sports</a></li>
+            </ul>
+        </header>
+        <h1>Contact</h1>
+        <div id="contactcontainer">
+            <h2>My Contacts</h2>
+            <div id="contactsections">
+                <div id="maincontacts">
+                    <p><strong>Email: </strong><a href="mailto:davidbbf@gmail.com">davidbbf@gmail.com</a></p>
+                    <p><strong>Phone:</strong> +358504942070</p>
+                </div>
+                <ul id="socialnetworks">
+                    <li><a class="sociallink" href="https://www.facebook.com/profile.php?id=706948169">Facebook</a></li>
+                    <li><a class="sociallink" href="https://www.instagram.com/barbelitos/">Instagram</a></li>
+                    <li><a class="sociallink" href="https://www.linkedin.com/in/david-fonseca-9a464a80/">Linkedin</a></li>
+                </ul>
+            </div>
+            <h2>Tell me something</h2>
+            <form onsubmit="formData(); return false" action="/contact.html" method="get" id="contactform">
+                <div class="form-group">
+                    <label for="firstname">First Name</label>
+                    <input class="form-field" type="text" id="firstname" name="firstname" placeholder="First Name" maxlength="25" required>    
+                </div>
+                <div class="form-group">
+                    <label for="lastname">Last Name</label>
+                    <input class="form-field" type="text" id="lastname" name="lastname" placeholder="Last Name" maxlength="25" required>    
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                <select class="form-field" name="gender" id="gender" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input class="form-field" type="text" id="age" name="age" placeholder="Your age" min="18" max="99" required>   
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input class="form-field" type="email" id="email" name="email" placeholder="Your email" maxlength="50" required>   
+                </div>
+                <div class="form-group">
+                    <label for="website">Website Address</label>
+                    <input class="form-field" type="url" id="website" name="website" placeholder="Your website" maxlength="50" required>  
+                </div>
+                <div class="form-group">
+                    <p>Comment</p>
+                    <textarea class="form-field" name="comment" id="comment" maxlength="255" cols="50" rows="8" required></textarea>
+                </div>
+                <div id="form-buttons" class="form-group">
+                    <button type="reset">Reset</button>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+            <div id="formresult"></div>
+        </div>
+        <script src="JS/script.js"></script>
+    </body>
+</html>

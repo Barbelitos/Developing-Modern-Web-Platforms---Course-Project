@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Projects</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Styles/style.css">
+    </head>
+    <body>
+        <header>
+            <ul id="navbar">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="sports.html">Sports</a></li>
+            </ul>
+        </header>
+        <h1>Projects</h1>
+        <p class="pagedescription">This a list of a few projects that I have completed.</p>
+        <div id="projectcontainer">
+            <div class="projectcard">
+                <img class="projectpicture" src="Images/Finland.jpg" alt="">
+                <div class="projectinfo">
+                    <h2 class="projecttitle">EasyFinland</h2>
+                    <p class="projectscription">The repository of online resources on Finnish language and culture.</p>
+                </div>
+                <a class="projectlink" href="https://www.easyfinland.com">Visit Website</a>
+            </div>
+            <div class="projectcard">
+                <img class="projectpicture" src="Images/OCV.jpg" alt="">
+                <div class="projectinfo">
+                    <h2 class="projecttitle">Online CV</h2>
+                    <p class="projectscription">My online CV that I have created for practicing HTML and CSS.</p>
+                </div>
+                <a class="projectlink" href="https://www.davidfonseca.info">Visit Website</a>
+            </div>
+            <div class="projectcard">
+                <img class="projectpicture" src="Images/Form.jpg" alt="">
+                <div class="projectinfo">
+                    <h2 class="projecttitle">Form Project</h2>
+                    <p class="projectscription">A  survey form project created for the Free Code Camp online training.</p>
+                </div>
+                <a class="projectlink" href="https://codepen.io/barbelitos/pen/ExKRqOj">Visit Website</a>
+            </div>
+        </div>
+        <script>
+            // Load
+            window.addEventListener('load', function() {
+                alert('In this page you can check some of my projects so far!');
+            });
+
+            // Scroll
+            window.addEventListener('scroll', function() {
+                alert("Scrolling!🤦‍♂️");
+            });
+
+            // Mouseover
+            var project = document.querySelector('.projectcard');
+            project.addEventListener('mouseover', function() {
+                project.classList.add('mouseover');
+            });
+            project.addEventListener('mouseout', function() {
+                project.classList.remove('mouseover');
+            });
+        </script>
+    </body>
+</html>
